@@ -1,8 +1,5 @@
 {
-  // keep your project/org IDs if you like
   "projectId": "prj_MsfvUoH4mFcvOXYm9WBMsuuYqTWt",
   "orgId":    "team_CDf3bxP1raCx5rAOhdyRJCPG",
-
-  // this tells Vercel “Hey, it’s a Next.js app” so it won’t expect a `public/` folder:
   "framework": "nextjs"
 }
