@@ -4,9 +4,9 @@ import {
   SignedIn,
   SignedOut,
   SignInButton,
-  SignUpButton,
   UserButton,
 } from "@clerk/nextjs";
+import Link from "next/link";
 import "./globals.css";
 
 export default function RootLayout({
@@ -23,7 +23,9 @@ export default function RootLayout({
           <header style={{ padding: 20, borderBottom: "1px solid #eee" }}>
             <SignedOut>
               <SignInButton />{" "}
-              <SignUpButton />
+              <Link href="/sign-up" style={{ marginLeft: 8 }}>
+                Sign Up
+              </Link>
             </SignedOut>
             <SignedIn>
               <UserButton />
